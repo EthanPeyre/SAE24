@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+  <title>Medical center G-mantique - Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Medical center G-mantique</h1>
+        <p>Your Health, our Wealth</p>
+    </header>
+
+    <nav>
+        <a href="index.html" >Home</a>
+        <a href="equipe.html" >Our Team</a>
+        <a href="services.html" >Services</a>
+        <a href="infos-pratiques.html" >Practical data</a>
+        <a href="actualites.html" >News</a>
+        <a href="faq.html" >Q & A</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="../pages.fr/index.html">Français</a>
+        <a href="espace-projet.html" class="login-btn">Project Overview</a>
+    </nav>
+
+    <main>
+        <section>
+		
+		<!-- PARTIE PHP : PENSER A REMPACER LE CODE PAR CELUI EN PHP AVEC DES BALISES--!>
+		
+            <h2>To contact us</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">We will be pleased to answer you</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Contact form</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nom">Complete Name *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresse email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Phone number</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Topic *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">-- Select a topic --</option>
+                                <option value="rendez-vous">Make an appointment</option>
+                                <option value="question">General Question</option>
+                                <option value="assurance">Question insurance</option>
+                                <option value="reclamation">Claim</option>
+                                <option value="autre">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Concerned Service</label>
+                            <select id="service" name="service">
+                                <option value="">-- Select a service --</option>
+                                <option value="medecine">General practice</option>
+                                <option value="kinesitherapie">Kinésithérapie</option>
+                                <option value="dentisterie">Phisiotherapy</option>
+                                <option value="autre-service">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande en détail..."></textarea>
+                        </div>
+
+                        <button type="submit">📤 Send the message</button>
+                    </form>
+                    <p style="font-size: 0.85rem; color: #999; margin-top: 1rem;">*Mandatory field</p>
+                </div>
+				
+		<!-- FIN PARTIE PHP : CLOTURER AVEC BALISE--!>
+
+                <div class="contact-direct">
+                    <h3>Direct Contact</h3>
+                    
+                    <div class="contact-item">
+                        <strong>📞 Phone</strong>
+                        <p>+33 (0) 672815638</p>
+                        <p style="font-size: 0.9rem; color: #666;">From mon. to sat., 8 AM-7 PM</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>✉️ Email</strong>
+                        <p>contact@cabinetpara.fr</p>
+                        <p style="font-size: 0.9rem; color: #666;">Reply under 24h</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📍 Addresse</strong>
+                        <p>3 Chemin de Castelan<br>31410 Lavernose-Lacasse</p>
+                        <p style="font-size: 0.9rem; color: #666;">Free Parking</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>🕒 Hours</strong>
+                        <p>Mon-Fri: 8 AM-7 PM<br>Sat: 9 AM-1 PM<br>Sunday: Closed</p>
+                    </div>
+
+                    <h4 style="margin-top: 2rem; color: #7EDEA0;">For emergencies</h4>
+                    <p style="font-size: 0.9rem;">Call <strong>15 (SAMU)</strong> or <strong>112 (European care)</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RENDEZ-VOUS -->
+        <section style="background: linear-gradient(135deg, #f0faf7 0%, #E8F5F0 100%);">
+            <h2>Schedule an appointment</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">Fill-out the following form to request an appointment</p>
+
+            <form class="appointment-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label for="app-nom">Your name *</label>
+                        <input type="text" id="app-nom" name="app-nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-email">Email *</label>
+                        <input type="email" id="app-email" name="app-email" required>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label for="app-tel">Phone *</label>
+                        <input type="tel" id="app-tel" name="app-tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-service">Service *</label>
+                        <select id="app-service" name="app-service" required>
+                            <option value="">-- Select --</option>
+                            <option value="medecine">General practice</option>
+                            <option value="kinesitherapie">Phisiotheray</option>
+                            <option value="dentisterie">Dentistery</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label for="app-date"> Prefered date *</label>
+                        <input type="date" id="app-date" name="app-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-time">Prefered time slot *</label>
+                        <input type="time" id="app-time" name="app-time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="app-message">Conplementary Information</label>
+                    <textarea id="app-message" name="app-message" rows="4" placeholder="Précisez la raison de votre visite..."></textarea>
+                </div>
+
+                <button type="submit">📅 Apply for an appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Medical Health Center. All rights reserved.</p>
+        <p>Conception & développement | Version 1.0</p>
+    </footer>
+</body>
+</html>

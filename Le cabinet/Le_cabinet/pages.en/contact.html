@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact - Gemantic Cabinet</title>
+</head>
+<body>
+    <header>
+        <h1>🏥 Gemantic Cabinet</h1>
+        <p>Your health, our priority</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="equipe.html">Team</a>
+        <a href="services.html">Services</a>
+        <a href="infos-pratiques.html">Practical Information</a>
+        <a href="actualites.html">News</a>
+        <a href="faq.html">Q & A</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="../pages.fr/contact.html">French</a>
+        <a href="prive/espace-projet.html" class="login-btn">Project Area</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p class="text-center text-muted mb-2">We would be delighted to answer you</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nom">Full Name *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Phone Number</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Subject *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">-- Select a subject --</option>
+                                <option value="rendez-vous">Book an appointment</option>
+                                <option value="question">General question</option>
+                                <option value="assurance">Insurance question</option>
+                                <option value="reclamation">Complaint</option>
+                                <option value="autre">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Concerned Service</label>
+                            <select id="service" name="service">
+                                <option value="">-- Select a service --</option>
+                                <option value="medecine">General Practice</option>
+                                <option value="kinesitherapie">Physiotherapy</option>
+                                <option value="dentisterie">Dentistry</option>
+                                <option value="autre-service">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Describe your request in detail..."></textarea>
+                        </div>
+
+                        <button type="submit">📤 Send message</button>
+                    </form>
+                    <p class="extra-small-text-muted">*Required fields</p>
+                </div>
+
+                <div class="contact-direct">
+                    <h3>Direct Contact</h3>
+                    
+                    <div class="contact-item">
+                        <strong>📞 Phone</strong>
+                        <p>+33672815638</p>
+                        <p class="small-text text-muted">Mon. to Sat., 8am-7pm</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>✉️ Email</strong>
+                        <p>gemantique@contact.fr</p>
+                        <p class="small-text text-muted">Reply within 24h</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📍 Address</strong>
+                        <p>3 Chemin de Castelan<br>31410 Lavernose-Lacasse</p>
+                        <p class="small-text text-muted">Free parking available</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>🕒 Hours</strong>
+                        <p>Mon-Fri: 8am-7pm<br>Sat: 9am-1pm<br>Sunday: Closed</p>
+                    </div>
+
+                    <h4 class="mt-2 text-success">In case of emergency</h4>
+                    <p class="small-text">Call <strong>15 (SAMU)</strong> or <strong>112</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RENDEZ-VOUS -->
+        <section class="section-gradient">
+            <h2>Book an Appointment</h2>
+            <p class="text-center text-muted mb-15">Fill out the form below to request an appointment</p>
+
+            <form class="appointment-form">
+                <div class="grid-two-cols">
+                    <div class="form-group">
+                        <label for="app-nom">Your Name *</label>
+                        <input type="text" id="app-nom" name="app-nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-email">Email *</label>
+                        <input type="email" id="app-email" name="app-email" required>
+                    </div>
+                </div>
+
+                <div class="grid-two-cols">
+                    <div class="form-group">
+                        <label for="app-tel">Phone *</label>
+                        <input type="tel" id="app-tel" name="app-tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-service">Service *</label>
+                        <select id="app-service" name="app-service" required>
+                            <option value="">-- Select --</option>
+                            <option value="medecine">General Practice</option>
+                            <option value="kinesitherapie">Physiotherapy</option>
+                            <option value="dentisterie">Dentistry</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-two-cols">
+                    <div class="form-group">
+                        <label for="app-date">Preferred Date *</label>
+                        <input type="date" id="app-date" name="app-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="app-time">Preferred Time *</label>
+                        <input type="time" id="app-time" name="app-time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="app-message">Additional Information</label>
+                    <textarea id="app-message" name="app-message" rows="4" placeholder="Specify the reason for your visit..."></textarea>
+                </div>
+
+                <button type="submit">📅 Request an appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gemantic Cabinet. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

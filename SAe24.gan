@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SAe24 - Cabinets Paramédicaux" company="IUT Blagnac - BUT RT" webLink="" view-date="2026-05-24" view-index="0" gantt-divider-location="450" resource-divider-location="300" version="2.8.11" locale="fr">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="227" order="0"/>
+        <field id="tpd4" name="Date de début" width="102" order="1"/>
+        <field id="tpd5" name="Date de fin" width="102" order="2"/>
+        <field id="tpd8" name="Charge" width="180" order="3"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="taskLabelDown" value="length"/>
+        <option id="taskLabelRight" value="name"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="Gestion de projet" color="#8cb6ce" meeting="false" start="2026-05-29" duration="18" complete="0" expand="true">
+            <task id="101" name="Constituer l equipe et designer chef de projet" color="#8cb6ce" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="102" name="Diagramme de Gantt initial" color="#8cb6ce" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="103" name="Mise en place outils collaboratifs" color="#8cb6ce" meeting="false" start="2026-05-29" duration="6" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+            <task id="104" name="Suivi continu et mise a jour Gantt" color="#8cb6ce" meeting="false" start="2026-05-29" duration="18" complete="0" thirdDate="2026-05-29" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="105" name="Livrables intermediaires (jalon S6 - 15/06)" color="#8cb6ce" meeting="true" start="2026-06-09" duration="0" complete="0" thirdDate="2026-06-15" thirdDate-constraint="0" priority="2" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+            <task id="106" name="Diagramme de Gantt final" color="#8cb6ce" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+        </task>
+        <task id="2" name="Infrastructure Réseau" color="#2980b9" meeting="false" start="2026-05-29" duration="17" complete="0" expand="true">
+            <task id="201" name="Definir plan adressage IP /24" color="#2980b9" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Matheo TASSIN"/></task>
+            <task id="205" name="Simulation Packet Tracer - site local" color="#2980b9" meeting="false" start="2026-06-03" duration="5" complete="0" thirdDate="2026-06-03" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Matheo TASSIN"/></task>
+            <task id="202" name="Configurer routeur Cisco" color="#2980b9" meeting="false" start="2026-06-09" duration="1" complete="0" thirdDate="2026-06-03" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+            <task id="203" name="Configurer switches" color="#2980b9" meeting="false" start="2026-06-09" duration="1" complete="0" thirdDate="2026-06-03" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Clement MASSIOT"/></task>
+            <task id="204" name="Configurer point acces Wi-Fi" color="#2980b9" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="206" name="Simulation Packet Tracer - intersites PM1+PM2" color="#2980b9" meeting="false" start="2026-06-12" duration="2" complete="0" thirdDate="2026-06-16" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="207" name="Interconnexion intersites CE1-CE2" color="#2980b9" meeting="false" start="2026-06-16" duration="2" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Matheo TASSIN"/></task>
+            <task id="208" name="Tests connectivite ping traceroute" color="#2980b9" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+        </task>
+        <task id="3" name="Serveur Windows / AD" color="#8e44ad" meeting="false" start="2026-05-29" duration="11" complete="0" expand="true">
+            <task id="301" name="Installer VMware ESXi 6.7" color="#8e44ad" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="302" name="Installer Windows Server 2019 VM" color="#8e44ad" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="303" name="Configurer controleur de domaine AD DS" color="#8e44ad" meeting="false" start="2026-06-03" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="304" name="Configurer DHCP et DNS" color="#8e44ad" meeting="false" start="2026-06-03" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="305" name="Creer comptes utilisateurs et espaces disques" color="#8e44ad" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="306" name="Installer et configurer The Dude supervision" color="#8e44ad" meeting="false" start="2026-06-09" duration="4" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="307" name="Deployer postes clients Windows" color="#8e44ad" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+        </task>
+        <task id="4" name="Serveur GNU/Linux" color="#e67e22" meeting="false" start="2026-05-29" duration="8" complete="0" expand="true">
+            <task id="401" name="Installer Ubuntu Mate 22.04 LTS VM" color="#e67e22" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="402" name="Configurer serveur Web Apache Nginx" color="#e67e22" meeting="false" start="2026-06-03" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="403" name="Configurer MySQL" color="#e67e22" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="404" name="Configurer FTP et TFTP" color="#e67e22" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="405" name="Configurer SMTP POP3" color="#e67e22" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="406" name="Installer et configurer Asterisk" color="#e67e22" meeting="false" start="2026-06-09" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+        </task>
+        <task id="5" name="Telephonie ToIP" color="#16a085" meeting="false" start="2026-06-03" duration="14" complete="0" expand="true">
+            <task id="501" name="Definir plan de numerotation" color="#16a085" meeting="false" start="2026-06-03" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+            <task id="502" name="Configurer extensions et trunk Asterisk" color="#16a085" meeting="false" start="2026-06-09" duration="4" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Clement MASSIOT"/></task>
+            <task id="503" name="Configurer softphones" color="#16a085" meeting="false" start="2026-06-12" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="504" name="Configurer FortiFone FON-175" color="#16a085" meeting="false" start="2026-06-12" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+            <task id="505" name="Configurer Aastra 320w secretaire" color="#16a085" meeting="false" start="2026-06-12" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Clement MASSIOT"/></task>
+            <task id="506" name="Fonctionnalites avancees IVR boites vocales" color="#16a085" meeting="false" start="2026-06-15" duration="3" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="507" name="Tests telephoniques intersites sip show peers" color="#16a085" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+        </task>
+        <task id="6" name="Site Web" color="#27ae60" meeting="false" start="2026-06-03" duration="14" complete="0" expand="true">
+            <task id="601" name="Structurer le site public et prive" color="#27ae60" meeting="false" start="2026-06-03" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Julien DEWATINE"/></task>
+            <task id="602" name="Developper partie publique FR et EN" color="#27ae60" meeting="false" start="2026-06-09" duration="4" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Lisa-Marie RAKOTOSON"/></task>
+            <task id="603" name="Developper partie privee login doc projet" color="#27ae60" meeting="false" start="2026-06-15" duration="3" complete="0" thirdDate="2026-06-09" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Lisa-Marie RAKOTOSON"/></task>
+            <task id="604" name="Integrer livrables telechargables" color="#27ae60" meeting="false" start="2026-06-17" duration="4" complete="0" thirdDate="2026-06-17" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Julien DEWATINE"/></task>
+            <task id="605" name="Depot GitHub gestion de versions" color="#27ae60" meeting="false" start="2026-06-03" duration="14" complete="0" thirdDate="2026-06-03" thirdDate-constraint="0" expand="true"><customproperty taskproperty-id="tpd8" value="Julien DEWATINE"/></task>
+            <task id="606" name="Tests et validation orthographe liens" color="#27ae60" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Lisa-Marie RAKOTOSON"/></task>
+        </task>
+        <task id="7" name="Tests et Recette" color="#e74c3c" meeting="false" start="2026-06-17" duration="4" complete="0" expand="true">
+            <task id="701" name="Tests reseau intrasite complets" color="#e74c3c" meeting="false" start="2026-06-17" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Matheo TASSIN"/></task>
+            <task id="702" name="Tests reseau intersite complets" color="#e74c3c" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="703" name="Tests telephoniques intrasite" color="#e74c3c" meeting="false" start="2026-06-17" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Clement MASSIOT"/></task>
+            <task id="704" name="Tests telephoniques intersite" color="#e74c3c" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+            <task id="705" name="Recette globale et corrections" color="#e74c3c" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+        </task>
+        <task id="8" name="Livrables Finaux" color="#c0392b" meeting="false" start="2026-06-17" duration="6" complete="0" expand="true">
+            <task id="801" name="Mode emploi de la PoC" color="#c0392b" meeting="false" start="2026-06-17" duration="6" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="802" name="Plan adressage et schema reseau Visio" color="#c0392b" meeting="false" start="2026-06-17" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Victor CZAPLA"/></task>
+            <task id="803" name="Plan de numerotation complet" color="#c0392b" meeting="false" start="2026-06-17" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Angelo RAHALINONY-NUNES"/></task>
+            <task id="804" name="Fichier logins mots de passe" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+            <task id="805" name="Synthese personnelle et autoevaluation" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+            <task id="806" name="Evaluation croisee par les pairs" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+            <task id="807" name="Video de presentation 3 min" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Julien DEWATINE, Lisa-Marie RAKOTOSON"/></task>
+            <task id="808" name="Conclusion globale du projet" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="809" name="Depot final sur Iris" color="#c0392b" meeting="false" start="2026-06-22" duration="1" complete="0" expand="true"><customproperty taskproperty-id="tpd8" value="Ethan PEYRE"/></task>
+            <task id="810" name="EVALUATION FINALE Semaine 26 - 23/06" color="#c0392b" meeting="true" start="2026-06-24" duration="0" complete="0" thirdDate="2026-06-23" thirdDate-constraint="0" priority="2" expand="true"><customproperty taskproperty-id="tpd8" value="Equipe complete"/></task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="1" name="Ethan PEYRE" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Victor CZAPLA" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Matheo TASSIN" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Julien DEWATINE" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Lisa-Marie RAKOTOSON" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Angelo RAHALINONY-NUNES" function="Default:0" contacts="" phone=""/>
+        <resource id="7" name="Clement MASSIOT" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="101" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="102" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="103" resource-id="1" function="Default:0" responsible="true" load="15.0"/>
+        <allocation task-id="103" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="103" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="103" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="103" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="103" resource-id="6" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="103" resource-id="7" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="104" resource-id="1" function="Default:0" responsible="true" load="30.0"/>
+        <allocation task-id="105" resource-id="1" function="Default:0" responsible="true" load="10.0"/>
+        <allocation task-id="105" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="105" resource-id="3" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="105" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="105" resource-id="5" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="105" resource-id="6" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="105" resource-id="7" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="106" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="201" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="205" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="202" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="203" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="204" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="206" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="207" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="208" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="301" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="302" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="303" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="304" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="305" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="306" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="307" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="401" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="402" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="403" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="404" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="405" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="406" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="501" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="502" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="503" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="504" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="505" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="506" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="507" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="601" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="602" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="603" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="604" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="605" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="606" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="701" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="702" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="703" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="704" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="705" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="801" resource-id="1" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="802" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="803" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="804" resource-id="1" function="Default:0" responsible="true" load="15.0"/>
+        <allocation task-id="804" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="804" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="804" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="804" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="804" resource-id="6" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="804" resource-id="7" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="1" function="Default:0" responsible="true" load="15.0"/>
+        <allocation task-id="805" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="6" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="805" resource-id="7" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="1" function="Default:0" responsible="true" load="15.0"/>
+        <allocation task-id="806" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="6" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="806" resource-id="7" function="Default:0" responsible="false" load="15.0"/>
+        <allocation task-id="807" resource-id="4" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="807" resource-id="5" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="808" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="809" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="810" resource-id="1" function="Default:0" responsible="true" load="10.0"/>
+        <allocation task-id="810" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="810" resource-id="3" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="810" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="810" resource-id="5" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="810" resource-id="6" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="810" resource-id="7" function="Default:0" responsible="false" load="10.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

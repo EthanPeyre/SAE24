@@ -256,8 +256,9 @@ section h3 {
 .team-photo-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    object-fit: contain; /* Makes the whole image fit in the section */
+    background-color: #f0f0f0; /* Optional : adds a grey border if necessary */
+    transition: transform 0.3s ease;
 }
 
 .team-card h3 {
@@ -567,9 +568,12 @@ button[type="submit"] {
 }
 
 .project-card ul,
-.checklist-item ul {
+.project-card ol,
+.checklist-item ul,
+.checklist-item ol {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .project-card li,
@@ -582,7 +586,7 @@ button[type="submit"] {
 
 .project-card li:before,
 .checklist-item li:before {
-    content: "✓";
+    content: none;
     position: absolute;
     left: 0;
     color: #7EDEA0;
@@ -974,4 +978,13 @@ footer p {
 
 .text-muted-999 {
     color: #999;
+}
+
+/* ==================== SCREENSHOTS ==================== */
+.result-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Keeps the picure's original sizing */
+    border-radius: 6px;
+    margin-top: 1rem;
 }

@@ -28,27 +28,27 @@
             <h2>Livrables Téléchargeables</h2>
             <p class="mb-15">Retrouvez ci-dessous l'ensemble des documents techniques et de gestion produits durant la SAé :</p>
             
-			<ul class="downloads-grid">
-                <li class="download-card">
+<div class="downloads-grid">
+                <div class="download-card">
                     <h3>Topologie Packet Tracer</h3>
                     <p>Fichier d'émulation complet de la structure réseau (intra et inter site).</p>
                     <a href="../../livrables/simulation_maquette_SAE24.pkt" class="btn-secondary">Télécharger (.pkt)</a>
-					<a href="../../livrables/simulation_maquette_SAE24_inter-sites.pkt" class="btn-secondary">Télécharger (.pkt)</a>
-                </li>
+				<a href="../../livrables/simulation_maquette_SAE24_inter-sites.pkt" class="btn-secondary">Télécharger (.pkt)</a>
+                </div>
 				
-				<li class="download-card">
+				<div class="download-card">
                     <h3>Plan d'Adressage</h3>
                     <p>Feuille de calcul contenant la segmentation du réseau.</p>
                     <a href="../../livrables/adresses-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
-                </li>
+                </div>
 				
-				<li class="download-card">
+				<div class="download-card">
                     <h3>Plan de numérotation (Telephonie)</h3>
                     <p>Feuille de calcul contenant la numérotation des téléphone IP du site.</p>
                     <a href="../../livrables/num-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
 					<p>Ce plan de numérotation associe un numéro unique à chaque praticien du cabinet en fonction de son matériel (téléphones numériques, postes analogiques ou softphones). En plus des lignes directes, des extensions spécifiques (250, 260 et 299) ont été créées pour activer des services de téléphonie avancés : la mise en place d'un menu vocal d'accueil (IVR), une cascade d'appels pour joindre la secrétaire en toute circonstance, et un groupement d'appels permettant de faire sonner simultanément tous les kinésithérapeutes. </p>
-                </li>
-			</ul>
+                </div>
+            </div>
 		</section>
 		
         <section class="hero">
@@ -58,21 +58,18 @@
                 <p class="mt-1">Le suivi du code source, des configurations applicatives et des scripts de déploiement est centralisé sur notre dépôt officiel.</p>
                 <a href="https://github.com/EthanPeyre/SAE24/tree/main" class="btn-primary mt-1" target="_blank">Voir le projet sur GitHub</a>
             </article>
-            <figure class="placeholder-image">
-                <span>[ Architecture Réseau PoC ]</span>
-            </figure>
         </section>
 
         <section>
             <h2>Mode d'emploi de la PoC</h2>
             <p class="mb-15">Suivez ces étapes pour déployer et tester l'environnement de démonstration de la PoC :</p>
             
-            <ol class="project-card">
+            <ul class="project-card">
                 <li><strong>Étape 1 :</strong> Téléchargez et chargez le fichier de topologie réseau dans l'émulateur.</li>
                 <li><strong>Étape 2 :</strong> Appliquez les scripts de configuration initiale sur les routeurs et les commutateurs principaux.</li>
                 <li><strong>Étape 3 :</strong> Démarrez les services de téléphonie IP (Asterisk/SIP) ainsi que les serveurs de noms (DNS).</li>
                 <li><strong>Étape 4 :</strong> Utilisez les identifiants fournis pour connecter les terminaux clients et tester les liaisons.</li>
-            </ol>
+            </ul>
             
             <div class="box-note">
                 <p><strong>Note importante :</strong> Veillez à respecter l'ordre d'allumage des équipements pour éviter les conflits d'attribution DHCP lors de la phase d'initialisation.</p>
@@ -101,8 +98,8 @@
 		<section>
             <h2>Simulation Packet Tracer</h2>
             <p>La simulation sous Cisco Packet Tracer a constitué une étape essentielle de notre preuve de concept (PoC). Elle nous a permis de modéliser l’ensemble de l’infrastructure cible, de valider la logique de notre architecture et de tester toutes nos configurations de manière virtuelle avant d'insérer les commandes sur le matériel physique :</p>
-            </hr> <img src="../../img/capture-reseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> </hr>
-			<img src="../../img/topologie-PM2.png" alt="Schema resau PM2 isole" class="team-photo-img"> </hr>
+            </hr> <img src="../../img/capture-réseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> </hr>
+			<img src="../../img/topologie_PM2.png" alt="Schema resau PM2 isole" class="team-photo-img"> </hr>
 			<ol>Architecture et Équipements Réseau</ol>
 				<ul>
 					<li>Routage et Commutation : Configuration complète des routeurs Cisco (notamment pour le Site B) avec la mise en place d'interfaces LAN (liaisons locales vers les switchs) et WAN (liaisons intersites connectées au réseau de la salle de TP).</li>

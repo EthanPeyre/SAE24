@@ -2,3 +2,6 @@ reste à relire
 corriger le css sur certaines images
 rajouter la video
 balise download pour livrables
+media queries
+validators
+tableau + auto evluation à mieux faire ?

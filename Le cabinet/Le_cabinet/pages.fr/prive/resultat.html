@@ -14,12 +14,12 @@
     </header>
 
     <nav>
-        <a href="sae.html">Presentation</a>
-        <a href="equipe-repartition.html" >Equipe du projet</a>
+        <a href="sae.html">Présentation</a>
+        <a href="equipe-repartition.html" class="active">Equipe du projet</a>
         <a href="gestion.html">Gestion de projet</a>
         <a href="reseau.html">Mode d'emploi et Réseau</a>
-        <a href="resultat.html" class="active">Résutats attendus</a>
-        <a href="probleme.html">Problemes rencontres</a>
+        <a href="resultat.html">Résultats attendus</a>
+        <a href="probleme.html">Problèmes rencontrés</a>
         <a href="espace-projet.html" class="active login-btn">Espace Projet</a>
     </nav>
 
@@ -29,31 +29,45 @@
             <p class="mb-15">Afin de valider la conformité de l'infrastructure, plusieurs batteries de tests ont été menées sur les protocoles fondamentaux.</p>
 
             <ul class="news-grid">
-                <ul class="news-card">
+                <li class="news-card">
                     <span class="news-date">Test d'interconnexion</span>
                     <h3>Validation des Ping ICMP</h3>
                     <p>Les requêtes de ping de bout en bout confirment le bon fonctionnement des tables de routage OSPF et du franchissement des barrières ACL entre les différents VLANs.</p>
                     <img src="../../img/R-R-ping.png" alt="Connectivite interrouteur" class="result-img">
 					<img src="../../img/R-Sautre-ping.png" alt="Connectivite notre routeur vers l'autre serveur" class="result-img">
-                </ul>
+                </li>
 
-                <ul class="news-card">
+                <li class="news-card">
                     <span class="news-date">Test VoIP / SIP</span>
                     <h3>Enregistrement des Softphones</h3>
                     <p>Vérification de la bonne liaison des comptes utilisateurs sur le serveur SIP Asterisk. Les requêtes REGISTER aboutissent sans perte de paquets.</p>
                    <img src="../../img/sip-show.png" alt="SIP Register" class="result-img">
-                </ul>
+                </li>
 
-                <ul class="news-card">
+                <li class="news-card">
                     <span class="news-date">Flux Multimédia</span>
                     <h3>Établissement d'Appel</h3>
                     <p>Capture du trafic lors d'une communication audio active. Le protocole RTP transporte correctement la voix sans gigue excessive détectée sur le réseau local.</p>
                     <img src="../../img/wireshark.png" alt="Capture d'écran : Wireshark RTP Call" class="result-img">
-                </ul>
+                </li>
             </ul>
         </section>
     </main>
 
+<aside id="last">
+    <hr />
+    <p><em> Validation de la page HTML5 - CSS3 </em></p>
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Frakotoson.atwebpages.com%2FSAe14%2FAccueil.html" target="_blank"> 
+		<img class= "image-responsive" src="../../img/ValidationCSS_HTML/html5-validator-badge-blue.png" alt="HTML5 Valide !" />
+	</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS Valide !" />
+    </a>
+  </aside>
+  
     <footer>
         <p>&copy; 2026 - Projet SAé 24 - Tous droits réservés.</p>
     </footer>

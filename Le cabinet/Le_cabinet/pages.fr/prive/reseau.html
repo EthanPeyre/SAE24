@@ -14,12 +14,12 @@
     </header>
 
     <nav>
-        <a href="sae.html">Presentation</a>
-        <a href="equipe-repartition.html" >Equipe du projet</a>
+        <a href="sae.html">Présentation</a>
+        <a href="equipe-repartition.html" class="active">Equipe du projet</a>
         <a href="gestion.html">Gestion de projet</a>
-        <a href="reseau.html" class="active">Mode d'emploi et Réseau</a>
-        <a href="resultat.html">Résutats attendus</a>
-        <a href="probleme.html">Problemes rencontres</a>
+        <a href="reseau.html">Mode d'emploi et Réseau</a>
+        <a href="resultat.html">Résultats attendus</a>
+        <a href="probleme.html">Problèmes rencontrés</a>
         <a href="espace-projet.html" class="active login-btn">Espace Projet</a>
     </nav>
 
@@ -44,7 +44,7 @@
 				
 				<div class="download-card">
                     <h3>Plan de numérotation (Telephonie)</h3>
-                    <p>Feuille de calcul contenant la numérotation des téléphone IP du site.</p>
+                    <p>Feuille de calcul contenant la numérotation des téléphones IP du site.</p>
                     <a href="../../livrables/num-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
 					<p>Ce plan de numérotation associe un numéro unique à chaque praticien du cabinet en fonction de son matériel (téléphones numériques, postes analogiques ou softphones). En plus des lignes directes, des extensions spécifiques (250, 260 et 299) ont été créées pour activer des services de téléphonie avancés : la mise en place d'un menu vocal d'accueil (IVR), une cascade d'appels pour joindre la secrétaire en toute circonstance, et un groupement d'appels permettant de faire sonner simultanément tous les kinésithérapeutes. </p>
                 </div>
@@ -79,7 +79,7 @@
 		<section>
             <h2>Architecture réseau complète</h2>
             <p>Pour optimiser la sécurité de notre infrastructure, l'attribution des adresses IP est entièrement prise en charge par le rôle DHCP hébergé sur notre serveur virtuel <em>Windows Server 2019</em>.</p>
-            </hr>
+            <br>
 			<p>Bien que l'utilisation d'un masque de sous-réseau en /24 offre techniquement la possibilité d'adresser jusqu'à 254 hôtes, nous avons fait le choix stratégique de restreindre volontairement l'étendue de la plage d'adresses dynamiques à 16 adresses disponibles. Cette plage a été calculée au plus juste pour couvrir nos besoins stricts :</p>
 			<ul>
 				<li>Les 6 ordinateurs de bureau câblés des praticiens.</li>
@@ -97,22 +97,22 @@
 		
 		<section>
             <h2>Simulation Packet Tracer</h2>
-            <p>La simulation sous Cisco Packet Tracer a constitué une étape essentielle de notre preuve de concept (PoC). Elle nous a permis de modéliser l’ensemble de l’infrastructure cible, de valider la logique de notre architecture et de tester toutes nos configurations de manière virtuelle avant d'insérer les commandes sur le matériel physique :</p>
-            </hr> <img src="../../img/capture-réseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> </hr>
-			<img src="../../img/topologie_PM2.png" alt="Schema resau PM2 isole" class="team-photo-img"> </hr>
-			<ol>Architecture et Équipements Réseau</ol>
+            <p>La simulation sous Cisco Packet Tracer a constitué une étape essentielle de notre preuve de concept (PoC). Elle nous a permis de modéliser l’ensemble de l’infrastructure cible, de valider la logique de notre architecture et de tester toutes nos configurations de manière virtuelle avant de saisir les commandes sur le matériel physique :</p>
+            <br> <img src="../../img/capture-réseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> <br>
+			<img src="../../img/topologie_PM2.png" alt="Schema resau PM2 isole" class="team-photo-img"> <br>
+			<ol><li>Architecture et Équipements Réseau</li></ol>
 				<ul>
 					<li>Routage et Commutation : Configuration complète des routeurs Cisco (notamment pour le Site B) avec la mise en place d'interfaces LAN (liaisons locales vers les switchs) et WAN (liaisons intersites connectées au réseau de la salle de TP).</li>
 					<li>Routage statique et Interconnexion : Configuration des routes statiques pour permettre aux paquets de circuler de manière fluide entre le réseau local (ex: 192.168.20.0/24) et le réseau du site distant (ex: 192.168.10.0/24).</li>
 					<li>Sécurité et NAT : Implémentation du protocole NAT (Network Address Translation) pour masquer l'infrastructure interne. Mise en place de règles de sécurité strictes via des listes d'accès (ACL) afin de contrôler précisément les flux autorisés et bloquer les paquets non sollicités (ex: isolation de certains trafics tout en permettant l'accès vers l'extérieur)</li>
 				</ul>
-			<ol>Déploiement des Services</ol>
+			<ol><li>Déploiement des Services</li></ol>
 				<p>La maquette Packet Tracer a intégré l'ensemble de la pile de services indispensables à la vie quotidienne d'un cabinet paramédical :</p>
 				<ul>
 					<li>Services d'Infrastructure : Validation de la distribution automatique des adresses IP via le service DHCP et de la résolution de noms via le DNS.</li>
 					<li>Messagerie et Web : Configuration de serveurs de messagerie interne (SMTP et POP3) permettant aux praticiens (médecin, secrétaire, etc.) de s'échanger des courriels professionnels, et hébergement du site web du cabinet.</li>
 				</ul>
-				<ol>Validation sur Packet Tracer</ol>
+				<ol><li>Validation sur Packet Tracer</li></ol>
 				<p>Parce qu'une infrastructure n'est viable que si elle est testée, la simulation a fait l'objet d'une campagne de validation rigoureuse pour simuler les usages réels :</p>
 				<ul>
 					<li>Tests de Connectivité : Réalisation de diagnostics par commandes ping et traceroute pour s'assurer que chaque terminal (PC de la secrétaire, postes des praticiens) accède correctement aux serveurs et à l'interconnexion intersites.</li>
@@ -127,6 +127,20 @@
 		</section>
     </main>
 
+<aside id="last">
+    <hr />
+    <p><em> Validation de la page HTML5 - CSS3 </em></p>
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Frakotoson.atwebpages.com%2FSAe14%2FAccueil.html" target="_blank"> 
+		<img class= "image-responsive" src="../../img/ValidationCSS_HTML/html5-validator-badge-blue.png" alt="HTML5 Valide !" />
+	</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS Valide !" />
+    </a>
+  </aside>
+  
     <footer>
         <p>&copy; 2026 - Projet SAé 24 - Tous droits réservés.</p>
     </footer>

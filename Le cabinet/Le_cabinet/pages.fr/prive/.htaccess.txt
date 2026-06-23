@@ -1,0 +1,4 @@
+AuthName "Espace privé, mot de passe requis"                 
+AuthType Basic    
+AuthUserFile /opt/lampp/etc/.htpasswd-users
+require valid-user

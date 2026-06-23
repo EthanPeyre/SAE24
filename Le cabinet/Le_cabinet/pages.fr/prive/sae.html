@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Présentation SAÉ - Le cabinet Gémantique</title>
+</head>
+<body>
+    <header>
+        <h1>Cabinet Gémantique</h1>
+        <p>Votre santé, notre priorité</p>
+    </header>
+
+    <nav>
+        <a href="sae.html" class="active">Presentation</a>
+        <a href="equipe-repartition.html">Equipe du projet</a>
+        <a href="gestion.html">Gestion de projet</a>
+        <a href="resau.html">Mode d'emploi et Réseau</a>
+        <a href="resultat.html">Résutats attendus</a>
+        <a href="probleme.html">Problemes rencontres</a>
+        <a href="espace-projet.html">Espace Projet</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Présentation de la SAÉ</h2>
+            <p class="text-center text-muted mb-2">Cette page présente le contexte, les objectifs et les livrables attendus de la SAÉ (Situation d'Apprentissage et d'Évaluation).</p>
+
+            <article class="sae-content">
+                <p>Cette SAÉ (Situation d'Apprentissage et d'Évaluation) s'inscrit dans le cadre de la formation BUT Réseaux &amp; Télécommunications. Elle a pour objectif de mettre en œuvre, dans un contexte professionnel réaliste, les compétences acquises au cours de la formation en matière de réseaux, systèmes, cybersécurité, développement web et gestion de projet.</p>
+
+                <p>Notre équipe a ainsi été missionnée par la société SipOc afin de concevoir une preuve de concept (PoC) destinée à accompagner la refonte complète du système d'information d'un groupement de cabinets paramédicaux implanté en Haute-Garonne. Ce groupement souhaitant étendre ses activités sur plusieurs sites en région Occitanie, la solution proposée doit être évolutive, performante et sécurisée.</p>
+
+                <p>La preuve de concept a pour objectif de démontrer la faisabilité technique du projet avant son déploiement à grande échelle. Elle permet de présenter une première version fonctionnelle de la solution envisagée et de valider les choix techniques réalisés par l'équipe.</p>
+
+                <p>Cette démarche permet d'offrir au client une vision concrète du futur système d'information tout en évaluant sa pertinence et sa capacité à répondre aux besoins exprimés.</p>
+            </article>
+			
+			<article class="sae-content">
+                <p>Pour valider cette maquette, l'infrastructure doit répondre à plusieurs critères précis, répartis entre les services locaux (intrasite) et la liaison entre les cabinets (intersites) :</p>
+
+                <p><strong>Les services réseaux et serveurs (Intrasite)</strong> : Chaque site doit être autonome et sécurisé. Pour cela, nous devons mettre en place :
+				<ul>
+					<li>Un serveur Windows fonctionnel qui gère les services essentiels comme le DHCP (distribution automatique des adresses IP) et le DNS (résolution de noms), ainsi que la gestion des comptes utilisateurs et des partages de fichiers.</li>
+					<li>Un serveur Linux pour héberger la base de données, l'application métier et le site web interne du cabinet.</li>
+					<li>Un réseau local bien structuré avec un routeur Cisco et une borne Wi-Fi sécurisée.</li>
+				</ul>
+				</p>
+
+                <p><strong>La téléphonie sur IP (ToIP)</strong> : L'intégration d'un serveur de téléphonie Asterisk pour gérer les appels du cabinet, les lignes des téléphones fixes et des applications (softphones), avec des services comme la messagerie vocale ou le transfert d'appels.</p>
+
+                <p><strong>L'interconnexion (Intersites)</strong> : L'objectif final est de connecter deux cabinets distincts pour que les données et le téléphone fonctionnent de manière fluide d'un site à l'autre.</hr></p>
+				<p>Le succès de notre PoC sera validé par la fourniture de documentations techniques (plans réseaux, architectures), d'une simulation complète sur Cisco Packet Tracer, d'une vidéo de démonstration de 3 minutes et, enfin, d'une soutenance orale devant un jury pour prouver le bon fonctionnement de notre maquette.<p>
+
+            </article>
+
+            <div class="text-center mt-2">
+                <a href="espace-projet.html" class="btn-primary">Accéder à l'Espace Projet</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cabinet Gémantique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

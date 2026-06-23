@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAé 24 - Réseau & PoC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SAé 24 : Infrastructures Réseau</h1>
+        <p>Présentation du contexte et guide d'utilisation de la Proof of Concept (PoC)</p>
+    </header>
+
+    <nav>
+        <a href="sae.html">Presentation</a>
+        <a href="equipe-repartition.html" >Equipe du projet</a>
+        <a href="gestion.html">Gestion de projet</a>
+        <a href="resau.html" class="active">Mode d'emploi et Réseau</a>
+        <a href="resultat.html">Résutats attendus</a>
+        <a href="probleme.html">Problemes rencontres</a>
+        <a href="espace-projet.html">Espace Projet</a>
+    </nav>
+
+    <main>
+		<section>
+            <h2>Livrables Téléchargeables</h2>
+            <p class="mb-15">Retrouvez ci-dessous l'ensemble des documents techniques et de gestion produits durant la SAé :</p>
+            
+			<ul class="downloads-grid">
+                <li class="download-card">
+                    <h3>Topologie Packet Tracer</h3>
+                    <p>Fichier d'émulation complet de la structure réseau.</p>
+                    <a href="../../livrables/simulation_maquette_SAE24.pkt" class="btn-secondary">Télécharger (.pkt)</a>
+                </li>
+				
+				<li class="download-card">
+                    <h3>Plan d'Adressage</h3>
+                    <p>Feuille de calcul contenant la segmentation du réseau.</p>
+                    <a href="../../livrables/adresse-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
+                </li>
+				
+				<li class="download-card">
+                    <h3>Plan de numérotation (Telephonie)</h3>
+                    <p>Feuille de calcul contenant la numérotation des téléphone IP du site.</p>
+                    <a href="../../livrables/num-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
+					<p>Ce plan de numérotation associe un numéro unique à chaque praticien du cabinet en fonction de son matériel (téléphones numériques, postes analogiques ou softphones). En plus des lignes directes, des extensions spécifiques (250, 260 et 299) ont été créées pour activer des services de téléphonie avancés : la mise en place d'un menu vocal d'accueil (IVR), une cascade d'appels pour joindre la secrétaire en toute circonstance, et un groupement d'appels permettant de faire sonner simultanément tous les kinésithérapeutes. </p>
+                </li>
+			</ul>
+		</section>
+		
+        <section class="hero">
+            <article>
+                <h2>Contexte de la SAé 24 & Attendus de la PoC</h2>
+                <p>La SAé 24 a pour objectif la mise en place d'une infrastructure réseau sécurisée et résiliente répondant aux besoins d'une entreprise en pleine croissance. La <strong>Proof of Concept (PoC)</strong> valide l'interconnexion des différents services (VoIP, Routage, Commutation) et la conformité du cahier des charges.</p>
+                <p class="mt-1">Le suivi du code source, des configurations applicatives et des scripts de déploiement est centralisé sur notre dépôt officiel.</p>
+                <a href="https://github.com/EthanPeyre/SAE24/tree/main" class="btn-primary mt-1" target="_blank">Voir le projet sur GitHub</a>
+            </article>
+            <figure class="placeholder-image">
+                <span>[ Architecture Réseau PoC ]</span>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Mode d'emploi de la PoC</h2>
+            <p class="mb-15">Suivez ces étapes pour déployer et tester l'environnement de démonstration de la PoC :</p>
+            
+            <ol class="project-card">
+                <li><strong>Étape 1 :</strong> Téléchargez et chargez le fichier de topologie réseau dans l'émulateur.</li>
+                <li><strong>Étape 2 :</strong> Appliquez les scripts de configuration initiale sur les routeurs et les commutateurs principaux.</li>
+                <li><strong>Étape 3 :</strong> Démarrez les services de téléphonie IP (Asterisk/SIP) ainsi que les serveurs de noms (DNS).</li>
+                <li><strong>Étape 4 :</strong> Utilisez les identifiants fournis pour connecter les terminaux clients et tester les liaisons.</li>
+            </ol>
+            
+            <div class="box-note">
+                <p><strong>Note importante :</strong> Veillez à respecter l'ordre d'allumage des équipements pour éviter les conflits d'attribution DHCP lors de la phase d'initialisation.</p>
+            </div>
+        </section>
+		
+		<section>
+            <h2>Architecture réseau complète</h2>
+            <p>Pour optimiser la sécurité de notre infrastructure, l'attribution des adresses IP est entièrement prise en charge par le rôle DHCP hébergé sur notre serveur virtuel <em>Windows Server 2019</em>.</p>
+            </hr>
+			<p>Bien que l'utilisation d'un masque de sous-réseau en /24 offre techniquement la possibilité d'adresser jusqu'à 254 hôtes, nous avons fait le choix stratégique de restreindre volontairement l'étendue de la plage d'adresses dynamiques à 16 adresses disponibles. Cette plage a été calculée au plus juste pour couvrir nos besoins stricts :</p>
+			<ul>
+				<li>Les 6 ordinateurs de bureau câblés des praticiens.</li>
+				<li>Les 7 téléphones de l'architecture de ToIP.</li>
+				<li>3 adresses de secours supplémentaires, réservées aux interventions de maintenance du technicien ou à des applications spécifiques.</li>
+			</ul>
+			<p>Cette approche restrictive constitue une barrière de sécurité. En limitant le pool DHCP au strict nécessaire plutôt que de laisser plus de 200 adresses vacantes, nous réduisons considérablement la surface d'attaque. Cela empêche toute tentative d'intrusion à grande échelle par le branchement sauvage d'équipements non autorisés sur le réseau du cabinet, facilitant ainsi le contrôle et la supervision en temps réel de notre parc informatique.</p>
+			<p>Contrairement aux ordinateurs ou téléphones qui peuvent changer d'IP sans conséquence, les équipements critiques doivent toujours rester joignables à la même adresse pour que les utilisateurs accèdent aux services (DNS, DHCP, Téléphonie, Site Web). De plus, cette fixeté est indispensable pour que le technicien puisse surveiller l'état de l'infrastructure sans interruption.</p>
+			<p>En complément de cette configuration statique, ces équipements critiques disposent de noms de domaine enregistrés et configurés au sein de notre serveur DNS local.</p>
+			<p>Plutôt que de devoir mémoriser et saisir des adresses IP complexes, les techniciens et les utilisateurs pourront utiliser des noms simples et explicites. Par exemple, notre hyperviseur ESXi possède l'adresse statique 192.168.20.253 sous le nom de domaine ESXI.gemantique.local.</p>
+			<img src="../../img/schema-reseau.png" alt="Schema resau complet" class="team-photo-img">
+			<p>Comme l'illustre le schéma du Site B, nous avons opté pour le déploiement de deux commutateurs/Switchs PoE (Power over Ethernet) de taille réduite plutôt qu'un seul équipement massif. Ce choix matériel permet d'alimenter directement nos téléphones IP tout en optimisant le câblage : chaque ordinateur de bureau est ainsi connecté sur le port réseau du téléphone qui lui est associé, divisant par deux le nombre de câbles nécessaires vers les switchs.</p>
+			<p>Afin de rationaliser l'utilisation du nombre limité de ports disponibles sur chaque switch et de structurer logiquement le réseau, les postes des kinésithérapeutes (PC1 à PC3) ont été regroupés sur le premier commutateur afin de garantir leur proximité. Les autres utilisateurs du cabinet (médecin, dentiste et secrétaire) sont quant à eux raccordés sur le second commutateur PoE. Enfin, dans notre configuration actuelle, l'emplacement physique exact du serveur ESXi et de la borne Wi-Fi (Point d'accès) reste flexible et a peu d'importance sur la segmentation générale du trafic.</p>
+        </section>
+		
+		<section>
+            <h2>Simulation Packet Tracer</h2>
+            <p>La simulation sous Cisco Packet Tracer a constitué une étape essentielle de notre preuve de concept (PoC). Elle nous a permis de modéliser l’ensemble de l’infrastructure cible, de valider la logique de notre architecture et de tester toutes nos configurations de manière virtuelle avant d'insérer les commandes sur le matériel physique :</p>
+            </hr> <img src="../../img/capture-reseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> </hr>
+			<ol>Architecture et Équipements Réseau</ol>
+				<ul>
+					<li>Routage et Commutation : Configuration complète des routeurs Cisco (notamment pour le Site B) avec la mise en place d'interfaces LAN (liaisons locales vers les switchs) et WAN (liaisons intersites connectées au réseau de la salle de TP).</li>
+					<li>Routage statique et Interconnexion : Configuration des routes statiques pour permettre aux paquets de circuler de manière fluide entre le réseau local (ex: 192.168.20.0/24) et le réseau du site distant (ex: 192.168.10.0/24).</li>
+					<li>Sécurité et NAT : Implémentation du protocole NAT (Network Address Translation) pour masquer l'infrastructure interne. Mise en place de règles de sécurité strictes via des listes d'accès (ACL) afin de contrôler précisément les flux autorisés et bloquer les paquets non sollicités (ex: isolation de certains trafics tout en permettant l'accès vers l'extérieur)</li>
+				</ul>
+			<ol>Déploiement des Services</ol>
+				<p>La maquette Packet Tracer a intégré l'ensemble de la pile de services indispensables à la vie quotidienne d'un cabinet paramédical :</p>
+				<ul>
+					<li>Services d'Infrastructure : Validation de la distribution automatique des adresses IP via le service DHCP et de la résolution de noms via le DNS.</li>
+					<li>Messagerie et Web : Configuration de serveurs de messagerie interne (SMTP et POP3) permettant aux praticiens (médecin, secrétaire, etc.) de s'échanger des courriels professionnels, et hébergement du site web du cabinet.</li>
+				</ul>
+				<ol>Validation sur Packet Tracer</ol>
+				<p>Parce qu'une infrastructure n'est viable que si elle est testée, la simulation a fait l'objet d'une campagne de validation rigoureuse pour simuler les usages réels :</p>
+				<ul>
+					<li>Tests de Connectivité : Réalisation de diagnostics par commandes ping et traceroute pour s'assurer que chaque terminal (PC de la secrétaire, postes des praticiens) accède correctement aux serveurs et à l'interconnexion intersites.</li>
+					<li>Tests Applicatifs : Envoi et réception réussis de mails de tests en conditions réelles (ex: validation de la réception des courriels du médecin sur le poste de la secrétaire), prouvant le bon fonctionnement de la chaîne de transport des données et la robustesse des règles NAT/ACL définies en amont.</li>
+				</ul>
+				<p>Test d’attribution par DHCP d’une adresse IP : </p>
+				<img src="../../img/dhcp-pkt.png" alt="Test d'attribution d'adresses" class="team-photo-img">
+				<p>Test de résolution DNS : </p>
+				<img src="../../img/dns-pkt.png" alt="Test d'de resolution DNS" class="team-photo-img">
+				<p>Test de la boite mail :</p>
+				<img src="../../img/mail-pkt.png" alt="Test boite mail" class="team-photo-img">
+		</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projet SAé 24 - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

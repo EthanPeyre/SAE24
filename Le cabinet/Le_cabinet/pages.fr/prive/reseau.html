@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAé 24 - Réseau & PoC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 
@@ -17,10 +17,10 @@
         <a href="sae.html">Presentation</a>
         <a href="equipe-repartition.html" >Equipe du projet</a>
         <a href="gestion.html">Gestion de projet</a>
-        <a href="resau.html" class="active">Mode d'emploi et Réseau</a>
+        <a href="reseau.html" class="active">Mode d'emploi et Réseau</a>
         <a href="resultat.html">Résutats attendus</a>
         <a href="probleme.html">Problemes rencontres</a>
-        <a href="espace-projet.html">Espace Projet</a>
+        <a href="espace-projet.html" class="active login-btn">Espace Projet</a>
     </nav>
 
     <main>
@@ -31,14 +31,15 @@
 			<ul class="downloads-grid">
                 <li class="download-card">
                     <h3>Topologie Packet Tracer</h3>
-                    <p>Fichier d'émulation complet de la structure réseau.</p>
+                    <p>Fichier d'émulation complet de la structure réseau (intra et inter site).</p>
                     <a href="../../livrables/simulation_maquette_SAE24.pkt" class="btn-secondary">Télécharger (.pkt)</a>
+					<a href="../../livrables/simulation_maquette_SAE24_inter-sites.pkt" class="btn-secondary">Télécharger (.pkt)</a>
                 </li>
 				
 				<li class="download-card">
                     <h3>Plan d'Adressage</h3>
                     <p>Feuille de calcul contenant la segmentation du réseau.</p>
-                    <a href="../../livrables/adresse-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
+                    <a href="../../livrables/adresses-plan.xlsx" class="btn-secondary">Télécharger (.xlsx)</a>
                 </li>
 				
 				<li class="download-card">
@@ -101,6 +102,7 @@
             <h2>Simulation Packet Tracer</h2>
             <p>La simulation sous Cisco Packet Tracer a constitué une étape essentielle de notre preuve de concept (PoC). Elle nous a permis de modéliser l’ensemble de l’infrastructure cible, de valider la logique de notre architecture et de tester toutes nos configurations de manière virtuelle avant d'insérer les commandes sur le matériel physique :</p>
             </hr> <img src="../../img/capture-reseau-pkt.png" alt="Schema resau simule" class="team-photo-img"> </hr>
+			<img src="../../img/topologie-PM2.png" alt="Schema resau PM2 isole" class="team-photo-img"> </hr>
 			<ol>Architecture et Équipements Réseau</ol>
 				<ul>
 					<li>Routage et Commutation : Configuration complète des routeurs Cisco (notamment pour le Site B) avec la mise en place d'interfaces LAN (liaisons locales vers les switchs) et WAN (liaisons intersites connectées au réseau de la salle de TP).</li>

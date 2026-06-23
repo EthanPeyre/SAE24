@@ -130,4 +130,11 @@ Une **simulation complète sous Cisco Packet Tracer** (hors partie téléphoniqu
 
 ---
 
+## ⚠️ Ajout de la vidéo POC dans le site web
+
+- Téléchargez la vidéo-poc depuis la catégorie "releases" — **1 min**
+- Puis coupez/collez-la dans le répertoire "livrables" qui se trouve dans Le cabinet → Le_cabinet → livrables — **1 min**
+
+---
+
 *Projet SAé24 — BUT1 R&T — IUT de Blagnac*

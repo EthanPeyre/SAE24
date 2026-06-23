@@ -1,4 +1,4 @@
-page espace projet
-formulaires
-media queries
-validations
+reste à relire
+corriger le css sur certaines images
+rajouter la video
+balise download pour livrables
